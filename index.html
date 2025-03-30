@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Amor!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" autoplay loop preload="auto">
+        <source src="Shawn Mendes - Never Be Alone.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+    
+    <header>
+        <h1>Feliz Aniversário, Amor!</h1>
+    </header>
+
+    <section id="surprise">
+        <!-- Seção de Mensagem e Vídeo -->
+<section id="video-message">
+    <h2>Minha Mensagem para Você</h2>
+    <button id="show-video-btn">Clique para Ver a Mensagem</button>
+
+    <div id="video-container" style="display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/seu_video_id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="foto 1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="foto 2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="foto 3.jpg" style="width:100%">
+            </div>
+        </div>
+        
+        <div class="message">
+            <p>Eu preparei esse site com muito carinho para você, minha linda! 😘</p>
+            <button onclick="revealSurprise()">Clique aqui para uma surpresa</button>
+        </div>
+        <div id="hidden-message" style="display: none;">
+            <p><strong>Surpresa!</strong> Te amo mais do que palavras podem expressar! 💖</p>
+        </div>
+    </section>
+
+    <section id="countdown">
+        <h2>Contagem Regressiva até o seu aniversário!</h2>
+        <div id="timer"></div>
+    </section>
+
+    <footer>
+        <p>Te amo, sempre! ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <section id="message-form">
+        <h2>Deixe uma Mensagem para Mim!</h2>
+        <form action="enviar_mensagem.php" method="POST">
+            <textarea name="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..." required></textarea><br><br>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+    
+</body>
+</html>
